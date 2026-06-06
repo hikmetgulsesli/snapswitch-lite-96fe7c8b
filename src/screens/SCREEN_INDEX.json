@@ -1,0 +1,118 @@
+[
+  {
+    "screenId": "681219b9a5fb4102b1c294a4e9702593",
+    "title": "Gameplay - SnapSwitch Lite",
+    "componentName": "GameplaySnapswitchLite",
+    "file": "src/screens/GameplaySnapswitchLite.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 4,
+    "actions": [
+      {
+        "id": "pause-1",
+        "kind": "button",
+        "label": "Pause",
+        "index": 0
+      },
+      {
+        "id": "refresh-2",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "button",
+        "label": "Settings",
+        "index": 2
+      },
+      {
+        "id": "restart-4",
+        "kind": "button",
+        "label": "RESTART",
+        "index": 3
+      },
+      {
+        "id": "gameplay-1",
+        "kind": "link",
+        "label": "Gameplay",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "achievements-2",
+        "kind": "link",
+        "label": "Achievements",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "leaderboards-3",
+        "kind": "link",
+        "label": "Leaderboards",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "68bfcab9e6f8472784219e43317938cc",
+    "title": "Game Settings - SnapSwitch Lite",
+    "componentName": "GameSettingsSnapswitchLite",
+    "file": "src/screens/GameSettingsSnapswitchLite.tsx",
+    "buttons": 7,
+    "inputs": 2,
+    "links": 0,
+    "actions": [
+      {
+        "id": "close-1",
+        "kind": "button",
+        "label": "Close",
+        "index": 0
+      },
+      {
+        "id": "low-2",
+        "kind": "button",
+        "label": "Low",
+        "index": 1
+      },
+      {
+        "id": "med-3",
+        "kind": "button",
+        "label": "Med",
+        "index": 2
+      },
+      {
+        "id": "high-4",
+        "kind": "button",
+        "label": "High",
+        "index": 3
+      },
+      {
+        "id": "back-to-game-5",
+        "kind": "button",
+        "label": "Back to Game",
+        "index": 4
+      },
+      {
+        "id": "save-changes-6",
+        "kind": "button",
+        "label": "Save Changes",
+        "index": 5
+      },
+      {
+        "id": "reset-preferences-7",
+        "kind": "button",
+        "label": "RESET PREFERENCES",
+        "index": 6
+      }
+    ]
+  }
+]
