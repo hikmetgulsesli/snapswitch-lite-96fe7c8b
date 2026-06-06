@@ -1,0 +1,1 @@
+# SnapSwitch Lite
