@@ -1,0 +1,20 @@
+[
+  {
+    "screenId": "681219b9a5fb4102b1c294a4e9702593",
+    "name": "Gameplay - SnapSwitch Lite",
+    "type": "game",
+    "description": "Gameplay - SnapSwitch Lite screen",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "68bfcab9e6f8472784219e43317938cc",
+    "name": "Game Settings - SnapSwitch Lite",
+    "type": "settings",
+    "description": "Game Settings - SnapSwitch Lite screen",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

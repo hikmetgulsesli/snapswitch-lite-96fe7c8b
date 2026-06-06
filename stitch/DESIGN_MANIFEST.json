@@ -1,0 +1,24 @@
+[
+  {
+    "screenId": "681219b9a5fb4102b1c294a4e9702593",
+    "title": "Gameplay - SnapSwitch Lite",
+    "htmlFile": "681219b9a5fb4102b1c294a4e9702593.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzg3ODg1ZWIyYjVlMzQ4YzI5NGNlYjQzNjM1ZGM5NzAyEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyMDM0MzI0NTYxMjc3NTk4ODQ1&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/snapswitch-lite-96fe7c8b/stitch/681219b9a5fb4102b1c294a4e9702593.html",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "68bfcab9e6f8472784219e43317938cc",
+    "title": "Game Settings - SnapSwitch Lite",
+    "htmlFile": "68bfcab9e6f8472784219e43317938cc.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzZhODFjNzAyNTc2MzQ5MjViOGU4ZWYwYWRiOTU1NWQyEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyMDM0MzI0NTYxMjc3NTk4ODQ1&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/snapswitch-lite-96fe7c8b/stitch/68bfcab9e6f8472784219e43317938cc.html",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Settings - SnapSwitch Lite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@800&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#0c0e12",
+                        "secondary-container": "#fdd400",
+                        "on-primary": "#00363a",
+                        "on-secondary-fixed": "#221b00",
+                        "on-primary-container": "#006970",
+                        "error": "#ffb4ab",
+                        "tertiary": "#fff3f2",
+                        "outline-variant": "#3b494b",
+                        "background": "#111318",
+                        "primary-fixed-dim": "#00dbe9",
+                        "tertiary-fixed-dim": "#ffb3ac",
+                        "on-surface-variant": "#b9cacb",
+                        "on-primary-fixed": "#002022",
+                        "inverse-on-surface": "#2f3035",
+                        "secondary": "#fff3d2",
+                        "on-primary-fixed-variant": "#004f54",
+                        "surface-container-low": "#1a1c20",
+                        "primary": "#dbfcff",
+                        "tertiary-fixed": "#ffdad6",
+                        "secondary-fixed-dim": "#e9c400",
+                        "surface-container-high": "#282a2e",
+                        "secondary-fixed": "#ffe170",
+                        "surface": "#111318",
+                        "on-tertiary-container": "#c10018",
+                        "surface-bright": "#37393e",
+                        "on-tertiary-fixed": "#410003",
+                        "on-background": "#e2e2e8",
+                        "on-secondary-container": "#6f5c00",
+                        "surface-variant": "#333539",
+                        "surface-dim": "#111318",
+                        "tertiary-container": "#ffcec9",
+                        "on-tertiary-fixed-variant": "#930010",
+                        "on-tertiary": "#680008",
+                        "on-error": "#690005",
+                        "inverse-primary": "#006970",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#544600",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#e2e2e8",
+                        "on-surface": "#e2e2e8",
+                        "outline": "#849495",
+                        "primary-container": "#00f0ff",
+                        "on-secondary": "#3a3000",
+                        "primary-fixed": "#7df4ff",
+                        "surface-container-highest": "#333539",
+                        "surface-container": "#1e2024",
+                        "surface-tint": "#00dbe9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "gutter": "16px",
+                        "hud-safe-area": "24px",
+                        "unit": "4px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "display-score-mobile": ["JetBrains Mono"],
+                        "label-mono": ["JetBrains Mono"],
+                        "display-score": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Geist"],
+                        "headline-lg": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-score-mobile": ["32px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "label-mono": ["14px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display-score": ["48px", { "lineHeight": "48px", "letterSpacing": "-0.05em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "30px", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>body {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBIXkuGbL9vrQ5iBrg7CtMVObUNr60P_WeGqCYYW5mW41W2Gcr6dZj6PqfetzAY5laZFYawHG14m8aQYMUyDCOIHUMfE2nsjRmi3XKs26oBbwbqhis7VvF2Wjz6sufMQz6PPhkjvgeudORLcSrZjvFJ-tyvIiMO-A64SwawNAx15uiS_dej37ORkWmmU2wQih-ys9g51qv7XMNm-VJvDmwWGor1NtO57JxLBVqWojXuezKB7HIaWZ9nkccOiyFbxCU7IC3MfbqsIuY);
+    background-size: cover;
+    background-position: center
+    }
+/* Custom styles to handle specific brand anchors that don't map cleanly to arbitrary tailwind classes */
+.glass-panel {
+    background-color: rgba(12, 14, 18, 0.85);
+    /* surface-container-lowest approx */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px)
+    }
+.neon-border {
+    box-shadow: inset 0 0 0 1px #3b494b;
+    /* outline-variant */
+    }
+.neon-glow-primary {
+    box-shadow: 0 0 8px rgba(0, 219, 233, 0.4)
+    }
+.neon-glow-primary-hover:hover {
+    box-shadow: 0 0 12px rgba(0, 219, 233, 0.6)
+    }
+/* Checkbox styling */
+.switch-checkbox:checked {
+    background-color: #00dbe9;
+    /* primary-fixed-dim */
+    border-color: #00dbe9
+    }
+.switch-checkbox:checked + div {
+    transform: translatex(100%);
+    background-color: #00363a;
+    /* on-primary */
+    }</style>
+</head>
+<body class="bg-background text-on-surface h-screen w-screen flex items-center justify-center overflow-hidden font-body-md text-body-md relative">
+<!-- Decorative blurred background overlay for the modal effect -->
+<div class="absolute inset-0 bg-surface/40 backdrop-blur-sm z-0"></div>
+<!-- Main Settings Modal -->
+<div class="glass-panel neon-border w-full max-w-lg rounded-xl p-8 z-10 flex flex-col gap-8 shadow-[-10px_0_30px_rgba(0,0,0,0.8)] relative mx-margin-mobile md:mx-0">
+<!-- Header -->
+<div class="flex justify-between items-center border-b border-outline-variant pb-4">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary drop-shadow-[0_0_8px_rgba(0,219,233,0.4)]">
+                SYSTEM SETTINGS
+            </h1>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 0;">close</span>
+</button>
+</div>
+<!-- Content -->
+<div class="flex flex-col gap-8">
+<!-- Difficulty Slider -->
+<div class="flex flex-col gap-4">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Difficulty Core</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="bg-surface-variant/50 border border-outline-variant text-on-surface-variant rounded py-2 font-label-mono text-label-mono hover:bg-surface-variant hover:text-on-surface transition-all">
+                        Low
+                    </button>
+<button class="bg-primary/20 border-2 border-primary text-primary rounded py-2 font-label-mono text-label-mono neon-glow-primary">
+                        Med
+                    </button>
+<button class="bg-surface-variant/50 border border-outline-variant text-on-surface-variant rounded py-2 font-label-mono text-label-mono hover:bg-surface-variant hover:text-on-surface transition-all">
+                        High
+                    </button>
+</div>
+</div>
+<!-- Input Help -->
+<div class="flex flex-col gap-4 bg-surface-container-low/50 p-4 rounded-lg border border-outline-variant/50">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Input Matrix</label>
+<ul class="flex flex-col gap-2">
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Switch Dimension</span>
+<div class="flex gap-2">
+<span class="font-label-mono text-label-mono bg-surface-variant px-2 py-1 rounded border border-outline-variant">Space</span>
+<span class="font-label-mono text-label-mono bg-surface-variant px-2 py-1 rounded border border-outline-variant">Click</span>
+</div>
+</li>
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Pause Execution</span>
+<span class="font-label-mono text-label-mono bg-surface-variant px-2 py-1 rounded border border-outline-variant text-center min-w-[32px]">P</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Restart Sequence</span>
+<span class="font-label-mono text-label-mono bg-surface-variant px-2 py-1 rounded border border-outline-variant text-center min-w-[32px]">R</span>
+</li>
+</ul>
+</div>
+<!-- Audio -->
+<div class="flex flex-col gap-4">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Acoustics</label>
+<div class="flex justify-between items-center">
+<span class="text-on-surface">Sound Effects</span>
+<label class="flex items-center cursor-pointer relative">
+<input checked="" class="sr-only switch-checkbox" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant rounded-full border border-outline-variant transition-colors duration-200 ease-in-out"></div>
+<div class="absolute left-1 top-1 w-4 h-4 bg-on-surface-variant rounded-full transition-transform duration-200 ease-in-out pointer-events-none transform translate-x-6 !bg-on-primary"></div>
+</label>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface">Music Track</span>
+<label class="flex items-center cursor-pointer relative">
+<input class="sr-only switch-checkbox" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant rounded-full border border-outline-variant transition-colors duration-200 ease-in-out"></div>
+<div class="absolute left-1 top-1 w-4 h-4 bg-on-surface-variant rounded-full transition-transform duration-200 ease-in-out pointer-events-none"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4 mt-4 pt-4 border-t border-outline-variant">
+<div class="flex gap-4">
+<button class="flex-1 bg-transparent border border-outline-variant text-on-surface-variant font-label-mono text-label-mono uppercase py-3 rounded hover:bg-surface-variant hover:text-on-surface transition-all">
+                    Back to Game
+                </button>
+<button class="flex-1 bg-primary text-on-primary font-label-mono text-label-mono font-bold uppercase py-3 rounded neon-glow-primary neon-glow-primary-hover transition-all active:scale-95 duration-75">
+                    Save Changes
+                </button>
+</div>
+<button class="text-error/80 hover:text-error font-label-mono text-label-mono text-center text-sm transition-colors py-2">
+                RESET PREFERENCES
+            </button>
+</div>
+</div>
+<!-- Background decoration elements to enhance the game feel -->
+<div class="absolute bottom-hud-safe-area right-hud-safe-area z-0 opacity-20 pointer-events-none font-display-score text-display-score text-primary">
+        00:42.8
+    </div>
+<div class="absolute top-hud-safe-area left-hud-safe-area z-0 opacity-20 pointer-events-none font-label-mono text-label-mono text-secondary-fixed">
+        MULTIPLIER: x4
+    </div>
+<script>
+        // Simple JS for the custom switch toggles since we can't use complex peer classes easily with the exact required design
+        document.querySelectorAll('input[type="checkbox"].switch-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                const dot = e.target.parentElement.querySelector('div:last-child');
+                if(e.target.checked) {
+                    dot.classList.add('translate-x-6', '!bg-on-primary');
+                    e.target.nextElementSibling.classList.add('bg-primary-fixed-dim', 'border-primary-fixed-dim');
+                } else {
+                    dot.classList.remove('translate-x-6', '!bg-on-primary');
+                    e.target.nextElementSibling.classList.remove('bg-primary-fixed-dim', 'border-primary-fixed-dim');
+                }
+            });
+            // trigger initial state
+            if(checkbox.checked) {
+                 checkbox.nextElementSibling.classList.add('bg-primary-fixed-dim', 'border-primary-fixed-dim');
+            }
+        });
+    </script>
+</body></html>
